@@ -1,0 +1,176 @@
+@charset "utf-8"; /*html과 css는 utf-8로 작성하시오*/
+body {
+    font-family: "Lato", "Noto Sans KR", "Sans-serif";
+    font-size: 16px;
+    color:black;
+    background-color: white;
+}
+ul {list-style:none;}
+a, a:link {
+    text-decoration: none;
+    color:inherit;
+}
+.notext {display:none;}
+/*---------header-------*/
+.header_top {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.logo {
+    float:left;
+}
+.user {
+    float:right;
+}
+#tnb li {
+    display: inline-block;
+    margin-left: 15px;
+    line-height: 48px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #888;
+    transition: color 0.3s;
+}
+#tnb li a:hover{
+    color: #000;
+}
+.gubun {
+    border: 0;
+    height: 1px;
+    background-color: #d60c00;
+    margin: 0;
+}
+.nav {
+    width: 100%;
+    background: #fafafa;
+}
+#gnb {
+    display:flex;
+    justify-content: center;
+}
+#gnb li {
+    margin:0 10px;
+    padding:20px 15px;
+    position: relative;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+#gnb li:hover {
+    color:#d60c00
+}
+#gnb li:hover .lnb {
+    display: block;
+    color :#000;
+}
+.lnb {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    left:0;
+    top:100%;
+    width: 100%;
+    box-shadow: 0 2px 5 0 #000;
+    background: #fff;
+}
+.lnb li:hover {
+    background-color: #d60c00;
+    color: #fbfbfb !important;
+}
+.lnb li {
+    padding: 10px 0 !important;
+    margin: 0 !important;
+    text-align: center;
+    
+}
+.lnb li a {
+    font-size: .825rem;
+    font-weight: 100;
+    height: 100%;
+    display: block;
+}
+.lnb li a:hover{
+    color:yellow;
+}
+/*------------------slide--------------*/
+#slide {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.slogan {
+    position:absolute;
+    z-index: 900; /*레이어 순위*/
+    color: #fff;
+    text-shadow: 0 0 5px #333; /*글자 그림자*/
+    left:50%;
+    top:100px;
+    transform: translateX(-50%);
+}
+.bx-wrapper {
+    border: 0;
+}
+/*---------------icons---------------*/
+#icons {
+    background-color: #d60c00;
+}
+.img_Item{
+    width: 900px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+/*---------------main----------------*/
+#main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#main h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #d60c00;
+    font-weight: 900;
+    text-align: center;
+    margin:30px 0;
+}
+#main ul {
+    overflow: hidden;
+    margin: 50px 0;
+}
+#main ul li {
+    float: left;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 50%; /*동그라미*/
+}
+#main ul li:nth-child(2) {
+    margin: 0 120px;
+}
+/*-------aside----------*/
+#aside {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.bnb li {
+    display: inline-block;
+    padding: 15px 0;
+    margin: 0 10px;
+    color: #d60c00;
+    font-size: 14px;
+}
+
+/*------------footer---------------*/
+#footer {
+    text-align: center;
+}
+.footer_logo {
+    margin: 30px 0;
+}
+.copytight {
+    text-transform: capitalize;
+    font-size: 12px;
+    color: #999;
+    font-weight: 700;
+}
